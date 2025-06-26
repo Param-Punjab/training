@@ -15,6 +15,7 @@ An Operating System (OS) is the most important software that runs on a computer.
 - **Device Management:** Controlling and coordinating input/output (I/O) devices like keyboards, mice, printers, and networking cards.
 - **Security:** Protecting system resources and user data from unauthorised access through mechanisms like user authentication and access control lists.
 - **User Interface (UI):** Providing a way for users to interact with the computer, either through a Graphical User Interface (GUI) or a Command Line Interface (CLI).
+
 ### 2. What is Linux Operating System?
 Linux is a family of open-source Unix-like operating systems bassed on the Linux Kernel. It is known for its stability, security, flexibility, and powerful command-line tools. Unlike proprietary operating systems like Windows or macOS, Linux is developed and distributed under GNU General Public License, meaning its source code is freely available for anyone to use, modify, and distribute.
 ### Key Characteristics of Linux:
@@ -25,6 +26,7 @@ Linux is a family of open-source Unix-like operating systems bassed on the Linux
 - **Stable:** Known for its reliability and up-time.
 - **Customizable:** Highly configurable and adaptable to various needs.
 - **Community-driven:** Supported by a vast global community of developers and users.
+
 ### 3. Different Methods to Use Linux (Ubuntu OS):
 Ubuntu is one of the most popular and user-friendly Linux distributions. Here are common ways to experience it:
 - **Virtual Machine(e.g., VirtualBox):**
