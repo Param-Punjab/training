@@ -4,7 +4,7 @@
 
 ### 1. What is an Operating System (OS)?
 
-![Error 404](files/operating-system.jpeg)
+![Error 404](files/operating-system.jpg)
 
 An Operating System (OS) is the most important software that runs on a computer. It manages computer hardware and software resources and provides common services for computer programs. You can think of it like a team leader, making sure all parts of the computer work well together.
 
