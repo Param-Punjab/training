@@ -3,7 +3,7 @@ A comprehensive day-by-day documentation of my tranning. Covers foundational con
 
 # TRCS201 Training Repository
 
-![Linux OS Banner](/files/linux-banner.png)
+![Linux OS Banner](files/banner-linux.png)
 
 This repository documents my daily progress through the TRCS2001 Linux and Operating Systems training course. Each day's learning is documented with detailed explanations, command references, and practical examples.
 
