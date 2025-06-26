@@ -3,7 +3,7 @@ A comprehensive day-by-day documentation of my tranning. Covers foundational con
 
 # TRCS201 Training Repository
 
-![Linux OS Banner](https://via.placeholder.com/1200x400/333333/FFFFFF?text=Linux+Operating+System+Fundamentals)
+![Linux OS Banner](/files/linux-banner.png)
 
 This repository documents my daily progress through the TRCS2001 Linux and Operating Systems training course. Each day's learning is documented with detailed explanations, command references, and practical examples.
 
