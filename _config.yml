@@ -6,20 +6,19 @@
 # search_enabled: true
 # color_scheme: dark # or 'dark' if you prefer a dark theme by default
 
+remote_theme: kitian616/jekyll-TeXt-theme@v3.2.0 # Use a specific version
 
-remote_theme: cotes2020/jekyll-theme-chirpy@v7.3.0 # Use a specific version
-
-# Chirpy Theme specific settings (examples)
+# Jekyll TeXt Theme specific settings (examples)
 title: TRCS2001 Training Progress
 description: Detailed daily log of my TRCS2001 technical training journey.
-url: "https://yourusername.github.io"
 baseurl: "/TRCS2001-Training-Progress"
+url: "https://yourusername.github.io"
 
-# Profile
-author: Your Name
-avatar: /assets/img/avatar.png # Your profile image
-twitter: your_twitter # Optional
-github: your_github # Optional
+# Site Author
+author:
+  name: "Your Name"
+  email: "your.email@example.com"
+  link: "https://yourusername.github.io"
 
 # Build settings
 markdown: kramdown
@@ -29,10 +28,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-archives
-  # Chirpy specific plugins might need to be explicitly listed or managed by its setup
+  - jekyll-avatar # Or other plugins it recommends
 
-# Features
-toc: true # Enable Table of Contents
-darkMode: true # Enable dark mode toggle
-search: true # Enable search
+# More configurations... (refer to TeXt theme documentation)
