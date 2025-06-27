@@ -1,33 +1,7 @@
-# title: TRCS2001 Training Progress
-# description: Daily log of my TRCS2001 technical training journey.
-# remote_theme: just-the-docs/just-the-docs
-
-# # You might also want to add these for Just The Docs
-# search_enabled: true
-# color_scheme: dark # or 'dark' if you prefer a dark theme by default
-
-remote_theme: kitian616/jekyll-TeXt-theme@v3.2.0 # Use a specific version
-
-# Jekyll TeXt Theme specific settings (examples)
 title: TRCS2001 Training Progress
-description: Detailed daily log of my TRCS2001 technical training journey.
-baseurl: "/TRCS2001-Training-Progress"
-url: "https://yourusername.github.io"
+description: Daily log of my TRCS2001 technical training journey.
+remote_theme: just-the-docs/just-the-docs
 
-# Site Author
-author:
-  name: "Your Name"
-  email: "your.email@example.com"
-  link: "https://yourusername.github.io"
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: /:categories/:title/
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-avatar # Or other plugins it recommends
-
-# More configurations... (refer to TeXt theme documentation)
+# You might also want to add these for Just The Docs
+search_enabled: true
+color_scheme: dark # or 'dark' if you prefer a dark theme by default
