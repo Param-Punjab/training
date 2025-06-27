@@ -17,6 +17,9 @@ An Operating System (OS) is the most important software that runs on a computer.
 - **User Interface (UI):** Providing a way for users to interact with the computer, either through a Graphical User Interface (GUI) or a Command Line Interface (CLI).
 
 ### 2. What is Linux Operating System?
+
+![Error 404](files/what-is-linux.avif)
+
 Linux is a family of open-source Unix-like operating systems bassed on the Linux Kernel. It is known for its stability, security, flexibility, and powerful command-line tools. Unlike proprietary operating systems like Windows or macOS, Linux is developed and distributed under GNU General Public License, meaning its source code is freely available for anyone to use, modify, and distribute.
 ### Key Characteristics of Linux:
 - **Open Source:** Free to use, modify, and distribute.
