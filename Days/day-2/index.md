@@ -88,7 +88,7 @@ Here's a detailed look at the basic Linux commands covered, along with more adva
 		- `mkdir -p project/src/data`: Creates parent directories if they don't exist (e.g., creates `project`, then `src`, then `data`).
 		- `mkdir folder1 folder2`: Creates multiple directories at once.
 	- **Related:** `rmdir` (for removing empty directories).
-- **`cat` (Concatenate and Display Files):
+- **`cat` (Concatenate and Display Files):**
 	- **Purpose:** Displays the content of files. Can also be used to create files with content directly from the terminal
 	- **Basic usage:** `cat myfile.txt` (displays content of `myfile.txt`)
 	- **Creating File with `cat`:** `cat > new_file.txt` (type content, then press Ctrl+D to save and exit).
@@ -97,6 +97,6 @@ Here's a detailed look at the basic Linux commands covered, along with more adva
 		- `cat -n myfile.txt`: Displays content with line numbers.
 		- `cat -s myfile.txt` Squeezes multiple blank lines into a single black line.
 	- **Related:** `less`, `more` (for viewing large files page by page), `head`, `tail` (for viewing beginning/end of files).
-- **`touch` (change File Timestamps / Create Empty Files):
+- **`touch` (change File Timestamps / Create Empty Files):**
 	- **Purpose:** creates new, empty files if they don't exist, or updates the access and modification timestamps of existing files.
 # In Progress
