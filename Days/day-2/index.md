@@ -99,7 +99,7 @@ Here's a detailed look at the basic Linux commands covered, along with more adva
 	- **Related:** `less`, `more` (for viewing large files page by page), `head`, `tail` (for viewing beginning/end of files).
 - **`touch` (change File Timestamps / Create Empty Files):**
 	- **Purpose:** creates new, empty files if they don't exist, or updates the access and modification timestamps of existing files.
-- **`touch`(Change File Timestamps/ Create Empty Files):
+- **`touch`(Change File Timestamps/ Create Empty Files):**
 	- **Purpose:** Creates new, empty files if they don't exist,  or updates the access and modification timestamps of existing files.
 	- **Basic Usage:** `touch new_empty_file.txt` (creates an empty file).
 	- **Advanced Usage:
@@ -107,7 +107,7 @@ Here's a detailed look at the basic Linux commands covered, along with more adva
 		- `touch -m existing_file.txt`:Updates only the modification time.
 		- `touch -t YYYYMMDDHHMM.SS file.txt`: Sets specific timestamps.
 	- **Key Distinction with `cot >`:**  `touch` creates an empty file or updates timestamps; `cat >` creates a file and allows you to immediately input content.
-- **`pwd` (Print Working Directory):
+- **`pwd` (Print Working Directory):**
 	- **Purpose:** Displays the absolute path of the current working directory.
 	- **Basic Usage:** `pwd`
 	- **Advanced Usage:** `pwd -P` (prints the physical directory, resolving any symbolic links).
@@ -115,7 +115,7 @@ Here's a detailed look at the basic Linux commands covered, along with more adva
 	- **Purpose:** Displays the effective username of the current user.
 	- **Basic Usage:** `whoami`
 	- **Related:** `who` (shows who is logged on), `id` (displays user and group IDs).
-- **`date` (Print or Set System Date and Time):
+- **`date` (Print or Set System Date and Time):**
 	- **Purpose:** Displays the current system date and time.
 	- **Basic Usage:** `date`
 	- **Advanced Usage:** 
@@ -141,7 +141,7 @@ Here's a detailed look at the basic Linux commands covered, along with more adva
 		- `uname -r`: Prints the kernel release.
 		- `uname -m`: Prints the machine hardware name (e.g., x86_64).
 		- `uname -o`: Prints the operating system (e.g., GNU/Linux).
-- **`clear` (Clear Terminal Screen):
+- **`clear` (Clear Terminal Screen):**
 	- **Purpose:** Clears the terminal screen, moving the current command prompt to the top.
 	- **Basic Usage:** `clear`
 	- **Keyboard Shortcut:** Ctrl+L often performs the same action.
@@ -157,7 +157,7 @@ These commands are crucial for file management and are frequently used in day-to
 		- `cp -i file.txt destination/`: Prompts before overwriting existing files.
 		- `cp -u file.txt destination/`: Copies only when the source is newer than the destination or when the destination file is missing.
 		- `cp file1.txt file2.txt folder/`: Copies multiple files to a directory.
-- **`mv` (Move or Rename Files and Directories):
+- **`mv` (Move or Rename Files and Directories):**
 	- **Purpose:** Moves files or directories from one location to another, or renames them.
 	- **Basic Usage (Move):** `mv file.txt /path/to/new_location/`
 	- **Basic Usage (Rename):** `mv old_name.txt new_name.txt`
