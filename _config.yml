@@ -1,7 +1,58 @@
-title: TRCS2001 Training Progress
-description: Daily log of my TRCS2001 technical training journey.
-remote_theme: just-the-docs/just-the-docs
+# title: TRCS2001 Training Progress
+# description: Daily log of my TRCS2001 technical training journey.
+# remote_theme: just-the-docs/just-the-docs
 
-# You might also want to add these for Just The Docs
-search_enabled: true
-color_scheme: dark # or 'dark' if you prefer a dark theme by default
+# # You might also want to add these for Just The Docs
+# search_enabled: true
+# color_scheme: dark # or 'dark' if you prefer a dark theme by default
+
+
+remote_theme: mmistakes/minimal-mistakes@4.24.0 # Use a specific version for stability
+
+# Minimal Mistakes specific settings (examples)
+title: TRCS2001 Training Progress
+description: Detailed daily log of my TRCS2001 technical training journey.
+baseurl: "/TRCS2001-Training-Progress" # The subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # The base hostname & protocol for your site
+
+# Site Author
+author:
+  name: "Your Name"
+  avatar: "/assets/images/bio-photo.jpg" # Optional, a profile photo
+  bio: "Learning and documenting my TRCS2001 journey."
+  location: "Ludhiana, India"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives # Optional, for category/tag archives
+  - jekyll-jupyter-notebook # If you have Jupyter notebooks
+
+# Defaults for pages and posts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      read_time: true
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "single"
+      read_time: true
+      classes: wide # Makes content wider
+
+# Search settings
+search:
+  provider: lunr # or algolia, etc.
+
+# More configurations... (refer to Minimal Mistakes documentation)
