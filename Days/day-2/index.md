@@ -99,4 +99,82 @@ Here's a detailed look at the basic Linux commands covered, along with more adva
 	- **Related:** `less`, `more` (for viewing large files page by page), `head`, `tail` (for viewing beginning/end of files).
 - **`touch` (change File Timestamps / Create Empty Files):**
 	- **Purpose:** creates new, empty files if they don't exist, or updates the access and modification timestamps of existing files.
-# In Progress
+- **`touch`(Change File Timestamps/ Create Empty Files):
+	- **Purpose:** Creates new, empty files if they don't exist,  or updates the access and modification timestamps of existing files.
+	- **Basic Usage:** `touch new_empty_file.txt` (creates an empty file).
+	- **Advanced Usage:
+		- `touch -o existing_file.txt`: Updates only the access time.
+		- `touch -m existing_file.txt`:Updates only the modification time.
+		- `touch -t YYYYMMDDHHMM.SS file.txt`: Sets specific timestamps.
+	- **Key Distinction with `cot >`:**  `touch` creates an empty file or updates timestamps; `cat >` creates a file and allows you to immediately input content.
+- **`pwd` (Print Working Directory):
+	- **Purpose:** Displays the absolute path of the current working directory.
+	- **Basic Usage:** `pwd`
+	- **Advanced Usage:** `pwd -P` (prints the physical directory, resolving any symbolic links).
+- **`whoami` (Who Am I):
+	- **Purpose:** Displays the effective username of the current user.
+	- **Basic Usage:** `whoami`
+	- **Related:** `who` (shows who is logged on), `id` (displays user and group IDs).
+- **`date` (Print or Set System Date and Time):
+	- **Purpose:** Displays the current system date and time.
+	- **Basic Usage:** `date`
+	- **Advanced Usage:** 
+		- `date +"%Y-%m-%d %H:%M:%S"`: Format the output.
+		- `date -s "2025-06-27 10:00:00"`: Set the system date and time (requires superuser privileges).
+		- `date -u`: Displays UTC (Coordinated Universal Time).
+	- **Related:** `col` (displays a calendar).
+- **`whereis`(Locate the Binary, Source, and Manual Page Files for a Command):**
+	- **Purpose:** Locates the binary, source, and manual page files for a specified command.
+	- **Basic Usage:** `whereis ls`
+	- **Output Example:** `ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz`
+	- **Related:** `which` (shows the full path of (shell) commands).
+- **`whatis` (Display One-Line Manual Page Descriptions):**
+	- **Purpose:** Provides a very brief one-line description from the manual page of a command.
+	- **Basic Usage:** `whatis ls`
+	- **Output Example:** `ls (1) - list directory contents`
+	- **Related:** `man` (access the full manual pages).
+- **`uname` (Print System Information):**
+	- **Purpose:** Displays system information about the Linux Kernel.
+	- **Basic Usage:** `uname` (outputs "Linux" on a Linux system).
+	- **Advanced Usage:**
+		- `uname -a`: Prints all system information (kernel name, hostname, kernel release, kernel version, machine hardware name, operating system).
+		- `uname -r`: Prints the kernel release.
+		- `uname -m`: Prints the machine hardware name (e.g., x86_64).
+		- `uname -o`: Prints the operating system (e.g., GNU/Linux).
+- **`clear` (Clear Terminal Screen):
+	- **Purpose:** Clears the terminal screen, moving the current command prompt to the top.
+	- **Basic Usage:** `clear`
+	- **Keyboard Shortcut:** Ctrl+L often performs the same action.
+
+---
+## Assignments:
+These commands are crucial for file management and are frequently used in day-to-day Linux operations.
+- **`cp` (Copy Files and Directories):**
+	- **Purpose:** Copies files and directories from one location to another.
+	- **Basic Usage:** `cp file.txt /path/to/destination/` (copies `file.txt` to the destination).
+	- **Advanced Usage:**
+		- `cp -r folder/ new_folder/`: Copies a directory and its contents recursively.
+		- `cp -i file.txt destination/`: Prompts before overwriting existing files.
+		- `cp -u file.txt destination/`: Copies only when the source is newer than the destination or when the destination file is missing.
+		- `cp file1.txt file2.txt folder/`: Copies multiple files to a directory.
+- **`mv` (Move or Rename Files and Directories):
+	- **Purpose:** Moves files or directories from one location to another, or renames them.
+	- **Basic Usage (Move):** `mv file.txt /path/to/new_location/`
+	- **Basic Usage (Rename):** `mv old_name.txt new_name.txt`
+	- **Advanced Usage:**
+		- `mv -i old_file.txt new_file.txt`: Prompts before overwriting existing files.
+		- `mv -u source_file.txt destination_file.txt`: Moves only when the source is newer than the destination or when the destination file is missing.
+- **`rmdir` (Remove Empty Directories):**
+	- **Purpose:** Deletes empty directories.
+	- **Basic Usage:** `rmdir empty_folder`
+	- **Caution:** `rmdir` will only work if the directory is completely empty.
+	- **Related:** `rm -r` (for removing non-empty directories and their contents).
+- **`rm` (Remove Files or Directories):**
+	- **Purpose:** Deletes files and/or directories. This command is very powerful and should be used with extreme caution as deleted files are generally not recoverable.
+	- **Basic Usage:** `rm file_to_delete.txt`
+	- **Advanced Usage:**
+		- `rm -r folder_to_delete/`: Recursively deletes a directory and its entire contents (use with extreme care!).
+		- `rm -f file_to_delete.txt`: Forces deletion without prompting (even if file is write-protected). Use with extreme caution.
+		- `rm -i file_to_delete.txt`: Prompts before every deletion (interactive mode).
+		- `rm *.txt`: Deletes all files with a `.txt` extension in the current directory.
+		- `rm -rf /`: **NEVER RUN THIS COMMAND!** This command recursively and forcefully deletes the entire root directory, effectively destroying your operating system. It's often referred to as the "destroy your system" command.
