@@ -21,15 +21,18 @@ A structured 4-module training program covering foundational concepts, system tr
 ## 📖 Detailed Syllabus
 
 ### Day 1: Operating Systems Fundamentals
-- Unix philosophy and architecture
-- Filesystem hierarchy standard (FHS)
-- User management and permissions
+- What is Operating System
+- What is Linux Operating System?
+- Different Methods to Use Linux (Ubuntu OS)
 - [View Full Notes →](Days/day-1)
 
 ### Day 2: Linux Boot Process & CLI Mastery
-- BIOS/UEFI vs GRUB initialization
-- Kernel initialization and systemd
-- Advanced command-line techniques
+- Booting: The System Startup Process
+- Types of Booting
+- What is the Kernel?
+- Understanding Shells
+- Two Types of interfaces
+- Basic Linux Components
 - [View Full Notes →](Days/day-2)
 
 *(Additional days to be added as training progresses)*
