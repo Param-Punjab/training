@@ -18,7 +18,7 @@ Booting is the initial set of operations that a computer performs when power is 
 	- **Definition:** Starting the computer from a completely powered-off state. This involves pressing the power button.
 	- **Process:** A full POST is performed, and all hardware components are re-initialized from scratch.
 	- **Examples:** Turning on a computer after it has been shut down; restarting a frozen computer by holding the power button.
-- **Worm Booting / Soft Booting: 
+- **Worm Booting / Soft Booting:**
 	- **Definition:** Restarting a computer without completely cutting off power. This is typically initiated from within the operating system (e.g., "Restart" option).
 	- **Process:** This system bypasses the initial POST and re-initializes only essential components, leading to a faster restart.
 	- **Examples:** Clicking "Restart" in your OS; pressing Ctrl+Alt+Delete (in some contexts).
@@ -39,29 +39,29 @@ A shell is a command-line interpreter or a graphical user interface that provide
 - **`sh` (Bourne shell):**
 	- **Description:** The original Unix shell, known for its simplicity and foundational role. It provides basic scripting capabilities.
 	- **Characteristics:** Less interactive features compared to newer shells.
-- **`bash`(Bourne-Again SHell):
+- **`bash`(Bourne-Again SHell):**
 	- **Description:** The most common and default shell on many Linux distributions (including Ubuntu). It's an enhanced version of `sh`.
 	- **Characteristics:** Includes features like command-line editing, command history, tab completion, job control, and powerful scripting capabilities.
 - **`zsh` (Z Shell):**
 	- **Description:** A powerful and high customizable shell that builds upon `bash` with many advanced features. Often preferred by power users. 
 	- **Characteristics:** Enhanced tab completion, better globbing (pattern matching), spell correction, theme support (Oh My Zsh is popular), and intelligent history search.
-- **`fish`(Friendly Interactive SHell):
+- **`fish`(Friendly Interactive SHell):**
 	- **Description:** Designed to be a more user-friendly and interactive shell with features like auto-suggestions and syntax highlighting out-of-the-box.
 	- **Characteristics:** Intuitive auto-suggestions based on history, syntax highlighting, web-based configuration, and simpler scripting syntax.
 
 ### 5. Two Types of interfaces: 
-- **GUI (Graphical User Interface):
+- **GUI (Graphical User Interface):**
 	- **Description:** A user interface that allows user to interact with electronic devices through graphical icons and visual indicators, as opposed to text-based interfaces.
 	- **Characteristics:** User-friendly, intuitive, relies on mouse clicks and visual elements.
 	- **Examples:** Ubuntu's GNOME desktop, Windows desktop, macOS.
-- **CLI (Command Line Interface):
+- **CLI (Command Line Interface):**
 	- **Description:** A text-based interface used to operate software and operating system by typing commands.
 	- **Characteristics:** Powerful, efficient for repetitive tasks, precise control, requires memorization of commands.
 	- **Examples:** Linux Terminal, Windows Command Prompt, PowerShell.
 
 ### 6. Basic Linux Components:
 Here's a detailed look at the basic Linux commands covered, along with more advanced usage and related commands:
-- **`ls`(List Directory Contents):
+- **`ls`(List Directory Contents):**
 	- **Purpose:** List the contents of a directory.
 	- **Basic Usage:** `ls` (lists contents of current directory)
 	- **Advanced Usage:** 
@@ -72,7 +72,7 @@ Here's a detailed look at the basic Linux commands covered, along with more adva
 		- `ls -R`: recursively lists subdirectories.
 		- `ls /path/to/directory`: List contents of a specific directory.
 	- **Related:** `dir` (another command for listing directory contents, less common in Linux).
-- **`cd`(Change Directory):
+- **`cd`(Change Directory):**
 	- **Purpose:** Change the current working directory.
 	- **Basic usage:** `cd documents` (moves into the "Documents" directory).
 	- **Advanced Usage:**
