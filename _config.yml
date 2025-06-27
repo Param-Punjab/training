@@ -1,1 +1,7 @@
+title: TRCS2001 Training Progress
+description: Daily log of my TRCS2001 technical training journey.
 remote_theme: just-the-docs/just-the-docs
+
+# You might also want to add these for Just The Docs
+search_enabled: true
+color_scheme: dark # or 'dark' if you prefer a dark theme by default
