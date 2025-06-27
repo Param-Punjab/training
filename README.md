@@ -6,6 +6,6 @@ A comprehensive day-by-day documentation of my tranning. Covers foundational con
 
 ## Table of Contents
 - [Day 1: Operating Systems Fundamentals](Days/day-1)
-- [Day 2: Linux Boot Process & Command Line Fundamentals](day-2)
+- [Day 2: Linux Boot Process & Command Line Fundamentals](Days/day-2)
 
 ---
