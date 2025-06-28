@@ -9,12 +9,12 @@ A structured 4-module training program covering foundational concepts, system tr
 
 ## 📚 Curriculum Overview
 
-| Module | Topic                            | Key Skills Developed                                                                                     |
-|--------|----------------------------------|----------------------------------------------------------------------------------------------------------|
-| 1️⃣     | **Unix/Linux & BASH Essentials** | System installation, CLI proficiency, shell scripting, environment configuration                         |
-| 2️⃣     | **PC & Network Troubleshooting** | Hardware diagnostics, network debugging, system recovery tools, connectivity solutions                   |
-| 3️⃣     | **HTML & Web Fundamentals**      | Semantic HTML5, CSS basics, page structure, web accessibility principles                                 |
-| 4️⃣     | **Git Version Control**          | Repository management, branching strategies, collaborative workflows, CLI-based operations               |
+| Module | Topic                                            | Key Skills Developed                                                                                                                               |
+| ------ | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1️⃣    | **Fundamentals of Unix/Linux & BASH Essentials** | Build a solid conceptual foundation of Unix/Linux, get hands-on with system installation, and learn how to use the Linux command line effectively. |
+| 2️⃣    | **PC & Network Troubleshooting**                 | Equip students with essential skills to diagnose and resolve common hardware and networking issues in a practical environment.                     |
+| 3️⃣    | **Introduction to HTML & Web Basics**            | Learn to build basic web pages using HTML.                                                                                                         |
+| 4️⃣    | **Introduction to GIT and Version Control**      | Learn and apply Git through CLI in a Linux environment.                                                                                            |
 
 ---
 
