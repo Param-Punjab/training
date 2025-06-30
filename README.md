@@ -35,6 +35,15 @@ A structured 4-module training program covering foundational concepts, system tr
 - Basic Linux Components
 - [View Full Notes →](Days/day-2)
 
+### Day 3: Nothing
+
+### Day 4: Bash Scripting
+- Definition
+- Basic Commands
+- echo, variables
+- loops
+- [View Full Notes →](Days/day-3)
+
 *(Additional days to be added as training progresses)*
 
 ---
