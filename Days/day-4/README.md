@@ -33,6 +33,7 @@ echo "Hello, Bash Scripting"
 
 ### Advanced Uses & Daily Notes:
 - **Colored Output:** Use ANSI escape code with ``echo -e`` for visual feedback in your scripts. This is fantastic for status messages (e.g., green for success, red for error).
+
 ```Bash
 #!/bin/bash
 echo -e "\e[32mSUCCESS: Operation completed!\e[0m" # Green test
@@ -40,6 +41,7 @@ echo -e "\e[31mERROR: Something went wrong.\e[0m" # Red text
 ```
 
 - **Debugging with ``echo``:** Sprinkle ``echo`` statements throughout your script to see the value of variables at different points. This is a simple but effective debugging technique.
+
 ```Bash
 #!/bin/bash
 my_var="initial"
@@ -58,6 +60,7 @@ echo "DEBUG: my_var is now $my_var"
 ---
 ## 2. Print User Information (Name, Age, City)
 The simple script demonstrates taking user input and displaying it.
+
 ```Bash
 #!/bin/bash
 read -p "Enter your name: " name
@@ -70,6 +73,7 @@ echo "You are $age years old and live in $city."
 
 ### Advanced Uses & Daily Notes:
 - **Secure Input:** For sensitive information (like passwords), use ``read -s`` to suppress echoing the input to the screen.
+
 ```Bash
 #!/bin/bash
 read -sp "Enter your password: " password
@@ -78,6 +82,7 @@ echo "Password entered (for demonstrating): $password"
 ```
 
 - **Timeout for Input:** Use ``read -t SECONDS`` to set a timeout for user input. If the user doesn't respond within the given time, the script can proceed with a default or error.
+
 ```Bash
 #!/bin/bash
 echo "You have 5 seconds to enter your favorite color: "
@@ -91,6 +96,7 @@ echo "your favorite color is: $fav_color"
 ```
 
 - **Reading Multiple Inputs on One Line:**
+
 ```Bash
 #!/bin/bash
 read -p "Enter name and age (e.g., John 30): " name age
@@ -100,6 +106,7 @@ echo "Name: $name, Age: $age"
 ---
 ## 3. Simple Calculator
 Arithmetic in Bash is primarily done using ``(())`` or ``expr``.
+
 ```Bash
 #!/bin/bash
 read -p "Enter first number: " num1
@@ -118,6 +125,7 @@ echo "Quotient: $quotient"
 
 ### Advanced Uses & Daily Notes:
 - **Floating Point Arithmetic:** Bash natively only supports integer arithmetic. For floating-point, you need external took like ``bc`` (basic calculator).
+
 ```Bash
 #!/bin/bash
 read -p "Enter first decimal number: " dec1
@@ -133,6 +141,7 @@ echo "Decimal Quotient (4 decimal places): $result"
 ```
 
 - **Error Handling (input Validation):** Ensure user input is actually a number.
+
 ```Bash
 #!/bin/bash
 read -p "Enter a number: " num
@@ -147,6 +156,7 @@ echo "You entered a valid number: $num"
 ---
 ## 4. Comparison of Two Numbers
 Use ``[[ ... ]]`` for conditional expressions, especially with ``if`` statements.
+
 ```Bash
 #!/bin/bash
 read -p "Enter first number: " num1
@@ -179,6 +189,7 @@ fi
 
 ### Advanced Uses & Daily Notes:
 - **Logical Operators:** Combine conditions using ``&&`` (AND) and ``||`` (OR).
+
 ```Bash
 #!/bin/bash
 read -p "Enter a number: " num
@@ -193,6 +204,7 @@ fi
 ```
 
 - **Regex Matching:** Use ``=~`` for regular expression matching within ``[[ ]]``. This is incredibly powerful for validating input or parsing text.
+
 ```Bash
 #!/bin/bash
 read -p "Enter an email address: " email
@@ -205,6 +217,7 @@ fi
 ```
 
 - **Case-Insensitive String Comparison:** Use ``nocasematch`` option.
+
 ```Bash
 #!/bin/bash
 shopt -s nocasematch # Enable case-insensitive matching
@@ -219,6 +232,7 @@ shopt -u nocasematch # Disable
 
 ## 5. Number Sign Check (Positive, Negative, Zero)
 Another application of conditional logic.
+
 ```Bash
 #!/bin/bash
 read -p "Enter a number: " num
@@ -234,6 +248,7 @@ fi
 
 ### Advanced Uses & Daily Notes:
 - **Using ``test`` Command:** The ``[[ ... ]]`` syntax is a modern Bash extension. The older, POSIX-compliant way is using the ``test`` command or single  brackets ``[ ]``. While ``[[ ]]`` is generally preferred in Bash for its extended features, it's good to be aware of ``[ ]``.
+
 ```Bash
 #!/bin/bash
 num=5
@@ -241,17 +256,21 @@ if [ "$num" -gt 0 ]; then # Note the spaces around the brackets are operators
 	echo "Positive (using [ ])"
 fi
 ```
+
 - **Ternary Operator (Simulated):** While Bash doesn't have a direct ternary operator, you can simulate it with ``&&`` and ``||``.
+
 ```Bash
 #!/bin/bash
 num=10
 result=$(( num > 5 ? 1 : 0 )) # Not direct Bash; this is for contexts like arithmetic
 # More Bash-idiomatic:
 [[ $num -gt 5 ]] && echo "Greater than 5" || echo "Not greater than 5"
+
 ```
 ---
 ## 6. While Loop (Decreasing Numbers)
 Loops are essential for repetitive tasks. ``While`` loops continue as long as a condition is true.
+
 ```Bash
 #!/bin/bash
 counter=10
@@ -269,6 +288,7 @@ echo "Blast off!"
 - **``break`` and ``continue``:**
 	- ``break``: Exits the loop immediately.
 	- ``continue``: Skips the rest of the current iteration and goes to the next.
+ 
 ```Bash
 #!/bin/bash
 i=0
@@ -288,6 +308,7 @@ done
 
 - **Infinite Loops:** ``while true; do ... done`` is a common pattern for daemons or services that run continuously. Remember to include a mechanism to exit (e.g., ``ctrl+c`` or a specific condition).
 - **Reading from a File Line by Line:** A very common and powerful ``while`` loop pattern.
+
 ```Bash
 #!/bin/bash
 echo "Line 1" > my_file.txt
@@ -303,6 +324,7 @@ done < my_file.txt # Redirects my_file.txt as input to the while loop
 
 ---
 ## 7. While Loop (Increasing Numbers)
+
 ```Bash
 #!/bin/bash
 counter=1
@@ -317,6 +339,7 @@ echo "Loop finished."
 
 ### Advanced Uses & Daily Notes:
 - **Looping with ``until``:** The ``until`` loop executes commands as long as the condition evaluates to false.
+
 ```Bash
 #!/bin/bash
 count=10
@@ -326,7 +349,9 @@ until [[ $count -eq 0 ]]; do
 done
 echo "Lift off!"
 ```
+
 - **Waiting for a Resource:** Use ``while`` loops to wait for a file to appear, a service to start, or a port to be open.
+
 ```Bash
 #!/bin/bash
 FILE="/tmp/my_signal_file.txt"
@@ -337,10 +362,13 @@ done
 echo "$FILE found! Proceding..."
 rm "$FILE" # Clean up
 ```
+
 ---
+
 ## 8. For Loop
 ``for`` loops are excellent for iterating over lists of items or a range of numbers.
 **Iterating over a sequence (brace expansion):
+
 ```Bash
 #!/bin/bash
 echo "Numbers from 1 to 5: "
@@ -350,6 +378,7 @@ done
 ```
 
 **Iterating over an array (more advanced):**
+
 ```Bash
 #!/bin/bas
 my_fruits=("Apple" "Banana" "Cherry" "Date")
@@ -361,6 +390,7 @@ done
 ```
 
 **C-style ``for`` loop (similar to C/Java):**
+
 ```Bash
 #!/bin/bash
 echo "C-style for loop:"
@@ -371,6 +401,7 @@ done
 
 **Advanced Uses & Daily Notes:**
 - **Looping through Files/Directories:**
+
 ```Bash
 #!/bin/bash
 echo "Listing .txt files in current directory: "
@@ -389,6 +420,7 @@ done
 ```
 
 - **Processing Command Line Arguments:** The special variables ``$@`` or ``$*`` hold all command-line arguments.
+
 ```Bash
 #!/bin/bash
 echo "Processing arguments:"
@@ -399,6 +431,7 @@ done
 ```
 
 - **Piping Output to a Loop:**
+
 ```Bash
 #!/bin/bash
 echo "Processing lines from 'ls -l':"
@@ -408,8 +441,10 @@ done
 ```
 
 ---
+
 ## 9. Menu-Driven Calculator using ``case``
 The ``case`` statement is a cleaner alternative to multiple ``if/elif/else`` statements for handling different choices.
+
 ```Bash
 #!/bin/bash
 
@@ -461,6 +496,7 @@ done
 
 ### Advanced Uses & Daily Notes:
 - **Pattern Matching in ``case``:** You can use wildcards (globs) in ``case`` patterns.
+
 ```Bash
 #!/bin/bash
 read -p "Enter a character: " char
@@ -473,6 +509,7 @@ esac
 ```
 
 - **Multiple Patterns for One Action:** Separate patterns with ``|``.
+
 ```Bash
 #!/bin/bash
 read -p "Enter a day of the week: " day
@@ -493,6 +530,7 @@ esac
 ---
 ## 10. String Manipulation (Length, Uppercase, Lowercase, First Upper)
 Bash offers powerful built-in string manipulation.
+
 ```Bash
 #!/bin/bash
 word="hello world"
@@ -523,6 +561,7 @@ echo "Substring (from index 6, length 5): ${word:6:5}"
 	- ``${VAR##pattern}``: Remove longest matching ``pattern`` from the beginning.
 	- ``${VAR%pattern}``: Remove shortest matching ``pattern`` from the end.
 	- ``${VAR%%pattern}``: Remove longest matching ``pattern`` from the end.
+ 
 ```Bash
 #!/bin/bash
 filename="archive.tar.gz"
@@ -541,9 +580,12 @@ echo "Directory only: ${path%/*}"         # /home/user/documents
 	- ``${ARRAY[0]}: First element
 	- ``${#ARRAY[0]}``: Number of elements
 	- ``ARRAY+=("new_item")``: Add element
+ 
 ---
 ## 11. Functions
+
 Functions allow you to modularize your code, making it more organized, readable, and reusable.
+
 ```Bash
 #!/bin/bash
 
@@ -585,6 +627,7 @@ fi
 - **Return Values vs. Echoing Output:** Functions return an exit status (0 for success, non-zero for error), but they output data to ``stdout``. To get data from a function, capture its ``stdout`` using command substitution (``$(function_name)``).
 - **Variable Scope (``local``):** Always use ``local`` for variables inside functions unless you explicitly intend for them to be global. This prevents unintended side effects and make your functions more predictable.
 - **Error Handling in Functions:** Functions can return non-zero exit codes to indicate failure, which can then be checked by the calling script.
+
 ```Bash
 #!/bin/bash
 validate_input() {
@@ -606,8 +649,10 @@ fi
 - **Exporting Functions:** If you want a function to be available in subshells (e.g., when running another script from within your script), you can ``export -f function_name``.
 
 ---
+
 ## 12. Checking if a File Exists
 File system checks are fundamental in Bash scripting.
+
 ```Bash
 #!/bin/bash
 read -p "Enter a filename: " filename
@@ -636,6 +681,7 @@ fi
 
 ### Advanced Uses & Daily Notes:
 - **Creating Files/Directories Conditionally:**
+
 ```Bash
 #!/bin/bash
 if [[ ! -d "my_logs" ]]; then
@@ -650,6 +696,7 @@ fi
 ```
 
 - **Checking for Permission Before Actions:** Always check if a script has the necessary permissions before attempting file operations to provide more user-friendly error messages.
+
 ```Bash
 #!/bin/bash
 log_file="/var/log/my_app.log" # Often requires root permissions
@@ -661,7 +708,9 @@ fi
 echo "Logging to $log_file..."
 # echo "This is a log entry." >> "$log_file"
 ```
+
 - **``find`` Command for Complex Searches:** For more sophisticated file searches (by name, size, type, age, etc.), combine ``find`` with your scripts.
+
 ```Bash
 #!/bin/bash
 echo "Finding files larger than 1MB:"
