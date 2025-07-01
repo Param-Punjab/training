@@ -42,7 +42,7 @@ A structured 4-module training program covering foundational concepts, system tr
 - Basic Commands
 - echo, variables
 - loops
-- [View Full Notes →](Days/day-3)
+- [View Full Notes →](Days/day-4)
 
 *(Additional days to be added as training progresses)*
 
