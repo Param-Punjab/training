@@ -46,11 +46,11 @@ Troubleshooting hardware issues isn't just about replacing parts; it's a systema
 2. **Software Diagnostics:** 
 	- **Live Boot Environment:** Use a Linux Live CD/USB (e.g., Ubuntu, SystemRescueCD) to rule out OS-level issues and access diagnostic tools.
 	- **Hardware Diagnostic Tools:** Utilize manufacturer-specific diagnostic tools (Dell Diagnostics, HP PC Hardware Diagnostics) or third-party tools like MemTest86+, HD Sentinel.
-- **Firmware/Driver Updates/Rollbacks:** Sometimes, a hardware issue is actually a software incompatibility. Updating or rolling back BIOS/UEFI firmware or device drivers can resolve issues.
-- **Reseating Components:** Dust, corrosion, or slight shifts can cause poor connections. Reset RAM, PCIe cards, and power cables.
-- **CMOS Reset:** Clear the BIOS/UEFI settings to default. This can fix issues caused by incorrect settings. (Refer to motherboard manual for jumper/button location).
-- **Environmental Contorl:** Ensure proper ventilation, clean out dust regularly, use a UPS (Uninterruptible Power Supply) for power protection.
-- **Data Recovery:** If a storage drive fails, the priority is data recover before attempting repairs that might further damage the drive. Specialized data recovery services exist for severe cases.
+	- **Firmware/Driver Updates/Rollbacks:** Sometimes, a hardware issue is actually a software incompatibility. Updating or rolling back BIOS/UEFI firmware or device drivers can resolve issues.
+	- **Reseating Components:** Dust, corrosion, or slight shifts can cause poor connections. Reset RAM, PCIe cards, and power cables.
+	- **CMOS Reset:** Clear the BIOS/UEFI settings to default. This can fix issues caused by incorrect settings. (Refer to motherboard manual for jumper/button location).
+	- **Environmental Contorl:** Ensure proper ventilation, clean out dust regularly, use a UPS (Uninterruptible Power Supply) for power protection.
+	- **Data Recovery:** If a storage drive fails, the priority is data recover before attempting repairs that might further damage the drive. Specialized data recovery services exist for severe cases.
 
 ---
 
