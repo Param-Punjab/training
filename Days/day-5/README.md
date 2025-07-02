@@ -49,7 +49,9 @@ Troubleshooting hardware issues isn't just about replacing parts; it's a systema
 - **CMOS Reset:** Clear the BIOS/UEFI settings to default. This can fix issues caused by incorrect settings. (Refer to motherboard manual for jumper/button location).
 - **Environmental Contorl:** Ensure proper ventilation, clean out dust regularly, use a UPS (Uninterruptible Power Supply) for power protection.
 - **Data Recovery:** If a storage drive fails, the priority is data recover before attempting repairs that might further damage the drive. Specialized data recovery services exist for severe cases.
+
 ---
+
 ## 2. Components of CPU & Motherboard: The Brain and the Nervous System
 Understanding the micro-components and their roles is key to appreciating system performance and troubleshooting.
 ### Central Processing Unit (CPU) - The Brain:
