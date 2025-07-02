@@ -105,6 +105,7 @@ The BIOS (Basic Input/Output System) or its modern successor, UEFI (Unified Exte
 | **Networking**   | No native networking support                         | Network capabilities (e.g., for firmware updates, PXE boot)                 |
 | **Drivers**      | 16-bit real mode drivers                             | 32-bit or 64-bit protected mode drivers                                     |
 | **Scalability**  | Limited by 16-bit architecture                       | More extensible, modular, and can load external drivers/applications        |
+
 ### Accessing and Using BIOS/UEFI:
 - **Access:** Typically by pressing a specific key (Del, F2, F10, F12, Esc) immediately after power-on. The key varies by manufacturer.
 - **Key Settings for Advanced Users:**
