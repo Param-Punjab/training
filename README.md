@@ -48,7 +48,6 @@ A structured 4-module training program covering foundational concepts, system tr
 - Computer Hardware, Troubleshooting
 - Components of CPU, Motherboard
 - Basic Input / Output system
-- Blue Screen of Death
 - [View Full Notes →](Days/day-5)
 
 *(Additional days to be added as training progresses)*
