@@ -82,6 +82,9 @@ The motherboard is the main printed circuit board that connects all components a
 	- **I/O Panel (Input/Output):** Connectors on the back for external devices (USB, Ethernet, Audio, HDMI/Display Port).
 	- **Power Connectors:** Main 24-pin ATX power connector and CPU power connector (e.g., 8-pin EPS).
 	- **Fan Headers:** Connectors for case fans and CPU cooler fans, allowing control of fan speed.
+
+---
+ 
 ## 3. Basic Input/Output System (BIOS) / Unified Extensible Firmware Interface (UEFI)
 The BIOS (Basic Input/Output System) or its modern successor, UEFI (Unified Extensible Firmware Interface), is the first software that runs when you power on your computer. It's crucial for system initialization and boot management.
 ### Purpose:
