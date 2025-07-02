@@ -42,7 +42,7 @@ A structured 4-module training program covering foundational concepts, system tr
 - Basic Commands
 - echo, variables
 - loops
-- [View Full Notes →](Days/day-4)
+- [View Full Notes →](Days/day-4/)
 
 ### Day 5: Hardware
 - Computer Hardware, Troubleshooting
