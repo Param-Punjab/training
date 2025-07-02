@@ -35,7 +35,9 @@ Troubleshooting hardware issues isn't just about replacing parts; it's a systema
 		- **Failure:** Often the most difficult to diagnose as it can mimic other failures. Causes include power surges, physical damage, bulging/leaking capacitors, faulty chipsets.
 		- **Symptoms:** No power, no POST (Power On Self Test), erratic behaviour, USB ports not working, network issues, system freezing, strange smell.
 		- **Troubleshooting:** Check for visual damage (bulging caps, scorch marks). Minimal POST test (only CPU, 1 RAM stick, PSU). Clear CMOS. Often, if all other components are ruled out, the motherboard is the culprit.
+
 ## How to Recover (Advanced Strategy):
+
 1. **Isolate the Problem:** 
 	-  **Minimal Boot:** Disconnect all non-essential components (extra drivers, PCIe cards, USB devices) and try to boot with only CPU, one RAM stick, and GPU (if no integrated graphics). This helps narrow down the faulty component.
 	- **Components Swapping:** If you have spare parts, swap out suspected components with known good ones one by one.
