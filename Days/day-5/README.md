@@ -19,7 +19,7 @@ Troubleshooting hardware issues isn't just about replacing parts; it's a systema
 	- **Failure:** Rarely fails outright unless physically damaged (e.g., bent pins, extreme overheating), or due to power surges. More often, issues are due to inadequate cooling.
 	- **Symptoms:** System instability, frequent crashes, random reboots, failure to boot (no POST), or severe performance degradation even under light load.
 	- **Troubleshooting:** Check CPU temperatures (e.g., using ``hwmon`` on linux, Core Temp/HWMonitor on Windows), verify heatsink seating, reapply thermal paste, test with minimal components, check motherboard's CPU support list.
-	- **Random Access Memory (RAM):
+	- **Random Access Memory (RAM):**
 		- **Failure:** One of the most common hardware failure points. Can be due to physical damage, manufacturing defects, or power issues.
 		- **Symptoms:** Frequent Blue Screens of Death (BSODs) or Kernel Panics, system craches, data corruption, strange graphical glitches, failure to boot (beeps codes). Often intermittent issues.
 		- **Troubleshooting:** MemTest86+ (bootable utility), test sticks individually, try different RAM slots, check motherboard **QVL** (Qualified Vendor List) for RAM compatibility. 
