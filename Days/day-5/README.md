@@ -16,7 +16,9 @@ Troubleshooting hardware issues isn't just about replacing parts; it's a systema
 - **Manufacturing Defects:** Less common in reputable brands, but inherent flaws can lead to premature failure.
 ### Key Components & Their Failure Indicators:
 - **Central Processing Unit (CPU):**
+
 !(Error 404)[files/Central Processing Unit.jpg]
+
 	- **Failure:** Rarely fails outright unless physically damaged (e.g., bent pins, extreme overheating), or due to power surges. More often, issues are due to inadequate cooling.
 	- **Symptoms:** System instability, frequent crashes, random reboots, failure to boot (no POST), or severe performance degradation even under light load.
 	- **Troubleshooting:** Check CPU temperatures (e.g., using ``hwmon`` on linux, Core Temp/HWMonitor on Windows), verify heatsink seating, reapply thermal paste, test with minimal components, check motherboard's CPU support list.
