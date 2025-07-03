@@ -27,7 +27,7 @@ Troubleshooting hardware issues isn't just about replacing parts; it's a systema
 		- **Failure:** HDDs fail due to mechanical wear (read/write head craches, motor failure) or bad sectors. SSDs fail due to NAND cell degradation or controller issues.
 		- **Symptoms:** Slow boot times, applications freezing, files becoming corrupted, "Operating System not found" errors, clicking/grinding noices (HDDs), SMART erros.
 		- **Troubleshooting:** Check SMART data (e.g., ``smartctl`` on Linux, CrystalDiskInfo on Windows), run disk diagnostics (chkdsk/fsck), attempt data recovery, replace drive. Always have backups!
-	- **Power Supply Unit (PSU):
+	- **Power Supply Unit (PSU)**
 		- **Failure:** Overloading, cheap components, fan failure, power surges. Can degrade over time, supplying unstable or insufficient power.
 		- **Symptoms:** System fails to power on, random shutdowns, intermittent reboots, strange burning smell, component damage due to unstable power.
 		- **Troubleshooting:** Test with a PSU tester, or swap with a known good PSU. Check for bulging capacitors. Ensure wattage is sufficient for all components.
