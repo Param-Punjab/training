@@ -50,6 +50,14 @@ A structured 4-module training program covering foundational concepts, system tr
 - Basic Input / Output system
 - [View Full Notes →](Days/day-5)
 
+### Day 6: 
+- Blue Screen of Death
+- Linux File System Hierarchy
+- Redirection Operators
+- File and Directory Permissions
+- Windows Device Manager & System Tools
+- [View Full Notes →](Days/day-6)
+
 *(Additional days to be added as training progresses)*
 
 ---
